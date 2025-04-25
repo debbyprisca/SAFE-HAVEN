@@ -8,7 +8,7 @@ const ResourcesPage: React.FC = () => {
   
   // Sample resource data - in a real app, this would come from an API
   const resources = [
-    {
+   /*{
       id: 1,
       name: 'National Domestic Violence Hotline',
       description: '24/7 confidential support, crisis intervention, and referral service.',
@@ -18,26 +18,26 @@ const ResourcesPage: React.FC = () => {
       contactText: 'Text START to 88788',
       website: 'https://www.thehotline.org',
       hours: '24/7',
+    },*/
+    {
+      id: 1,
+      name: 'OKOA REFUGE',
+      description: 'Okoa Refuge’s Gender-Based Violence shelters are working to eradicate human trafficking and gender-based violence in our lifetime',
+      category: 'shelter',
+      location: 'nationwide',
+      contactPhone: '(904) 580-OKOA(6562)',
+      website: 'https://www.okoarefuge.org',
+      hours:  'Mon-Fri 9am-5pm',
     },
     {
       id: 2,
-      name: 'Safe Horizon',
-      description: 'Provides support, prevents violence, and promotes justice for victims of crime and abuse.',
-      category: 'shelter',
-      location: 'New York',
-      contactPhone: '1-800-621-HOPE (4673)',
-      website: 'https://www.safehorizon.org',
-      hours: '24/7',
-    },
-    {
-      id: 3,
-      name: 'RAINN National Sexual Assault Hotline',
-      description: 'Free, confidential support for sexual assault survivors and their loved ones.',
-      category: 'hotline',
+      name: 'Justice Centres Uganda/JCU',
+      description: 'Free legal assistance for qualifying low-income individuals.',
+      category: 'legal',
       location: 'nationwide',
-      contactPhone: '1-800-656-HOPE (4673)',
-      website: 'https://www.rainn.org',
-      hours: '24/7',
+      contactPhone: '0414 256 526',
+      website: 'https://justicecentres.go.ug/g',
+      hours:  'Mon-Fri 9am-5pm',
     },
     {
       id: 4,

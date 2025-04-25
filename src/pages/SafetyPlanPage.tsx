@@ -233,7 +233,7 @@ const SafetyPlanPage: React.FC = () => {
                   onChange={(e) => handleInputChange('emergencyContacts', e.target.value)}
                 ></textarea>
                 <p className="text-sm text-gray-500 mt-1">
-                  Include local police: 911, National DV Hotline: 1-800-799-7233, and trusted friends/family
+                  Include local police: 999 0r 122, National DV Hotline: 0714667772, and trusted friends/family
                 </p>
               </div>
 
@@ -374,7 +374,7 @@ const SafetyPlanPage: React.FC = () => {
                   onChange={(e) => handleInputChange('childrenPlan', e.target.value)}
                 ></textarea>
                 <p className="text-sm text-gray-500 mt-1">
-                  Examples: Code words, how to call 911, where to go, what to take, who to trust, school safety plans
+                  Examples: Code words, how to call 999, where to go, what to take, who to trust, school safety plans
                 </p>
               </div>
 
