@@ -8,19 +8,19 @@ const ResourcesPage: React.FC = () => {
   
   // Sample resource data - in a real app, this would come from an API
   const resources = [
-   /*{
+   {
       id: 1,
-      name: 'National Domestic Violence Hotline',
-      description: '24/7 confidential support, crisis intervention, and referral service.',
-      category: 'hotline',
-      location: 'nationwide',
-      contactPhone: '1-800-799-7233',
+      name: 'Uganda Womens Network/UWONET',
+      description: 'provides free legal aid, psychosocial and temporary accommodation for women and children facing violence in their homes and communities.',
+      category: 'shelter',
+      location: 'Bbuye-Kigowa Ntinda',
+      contactPhone: '+256 414 286 589 or +256 759 330 000',
       contactText: 'Text START to 88788',
-      website: 'https://www.thehotline.org',
-      hours: '24/7',
-    },*/
+      website: 'https://www.uwonet.or.ug',
+      hours: 'Mon-Fri 9am-5pm',
+    },
     {
-      id: 1,
+      id: 2,
       name: 'OKOA REFUGE',
       description: 'Okoa Refuge’s Gender-Based Violence shelters are working to eradicate human trafficking and gender-based violence in our lifetime',
       category: 'shelter',
@@ -30,7 +30,7 @@ const ResourcesPage: React.FC = () => {
       hours:  'Mon-Fri 9am-5pm',
     },
     {
-      id: 2,
+      id: 3,
       name: 'Justice Centres Uganda/JCU',
       description: 'Free legal assistance for qualifying low-income individuals.',
       category: 'legal',
@@ -40,7 +40,7 @@ const ResourcesPage: React.FC = () => {
       hours:  'Mon-Fri 9am-5pm',
     },
     {
-      id: 3,
+      id: 4,
       name: 'FIDA Uganda',
       description: 'Provides legal aid services through a strategic network of offices reaching into 20 districts across the country.',
       category: 'legal',
@@ -50,7 +50,7 @@ const ResourcesPage: React.FC = () => {
       hours: 'Mon-Fri 9am-5pm',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Womens Peace and Humaritarian Fund',
       description: 'WPHF mobilizes and channels flexible and quality funding and capacity support to women peacebuilders, humanitarians and human rights defenders working at the forefront of Women Peace Security and Humanitarian Action (WPS-HA) issues across the globe.',
       category: 'support',
@@ -60,7 +60,7 @@ const ResourcesPage: React.FC = () => {
       hours: 'Varies by location',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Uganda NONE in three',
       description: 'None in Three was delivered in Uganda by Makerere University, Kampala. Our research focus is child marriage, and the associated gender-based violence surrounding early marriage, including sexual coercion and abuse.',
       category: 'education',
@@ -69,15 +69,7 @@ const ResourcesPage: React.FC = () => {
       website: 'https://www.noneinthree.org/',
       hours: 'Mon-Fri 8am-5pm',
     },
-    {
-      id: 6,
-      name: 'WomensLaw.org',
-      description: 'Legal information and resources for victims of domestic violence and sexual assault.',
-      category: 'education',
-      location: 'online',
-      website: 'https://www.womenslaw.org',
-      hours: 'Online resources available 24/7',
-    },
+    
     {
       id: 7,
       name: 'Center for Domestic Violence Prevention (CEDOVIP)',
@@ -141,7 +133,6 @@ const ResourcesPage: React.FC = () => {
                 onChange={(e) => setSelectedCategory(e.target.value)}
               >
                 <option value="all">All Categories</option>
-                <option value="hotline">Hotlines</option>
                 <option value="shelter">Shelters</option>
                 <option value="legal">Legal Aid</option>
                 <option value="support">Support Services</option>
@@ -171,12 +162,7 @@ const ResourcesPage: React.FC = () => {
 
       {/* Resource Categories */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-8">
-        <CategoryButton 
-          icon={<Phone size={20} />}
-          label="Hotlines"
-          isActive={selectedCategory === 'hotline'}
-          onClick={() => setSelectedCategory(selectedCategory === 'hotline' ? 'all' : 'hotline')}
-        />
+    
         <CategoryButton 
           icon={<Home size={20} />}
           label="Shelters"
@@ -209,7 +195,7 @@ const ResourcesPage: React.FC = () => {
           <ShieldAlert size={24} className="text-red-500 mr-3 flex-shrink-0" />
           <div>
             <h3 className="text-lg font-semibold text-gray-800">In immediate danger?</h3>
-            <p className="text-gray-600">Call <a href="tel:911" className="font-bold text-red-600 hover:underline">911</a> or the National Domestic Violence Hotline: <a href="tel:18007997233" className="font-bold text-red-600 hover:underline">1-800-799-7233</a></p>
+            <p className="text-gray-600">Call <a href="tel:999" className="font-bold text-red-600 hover:underline">999</a> or the National Domestic Violence Hotline: <a href="tel:0714667772" className="font-bold text-red-600 hover:underline">0714667772</a></p>
           </div>
         </div>
       </div>
